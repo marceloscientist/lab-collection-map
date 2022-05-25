@@ -12,7 +12,10 @@ public class Cap15_Lab01 {
 		pessoaMap.put("Bruna", 17);
 
 		
-		System.out.println("-- Pessoas --");
+		System.out.println("-- Pessoas com get --");
+		pessoaMap.forEach((k,v) -> System.out.println(k +": "+ pessoaMap.get(k)));
+
+		System.out.println("-- Pessoas sem get --");
 		pessoaMap.forEach((k,v) -> System.out.println(k +": "+ v));
 	}
 

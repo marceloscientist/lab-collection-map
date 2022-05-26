@@ -14,8 +14,6 @@ public class Cap15_Lab02 {
 		estudanteList.add(new Estudante("Ricardo",7.0,6.0));
 		estudanteList.add(new Estudante("Gustavo",9.5,10.0));
 
-		estudanteList.forEach(e->e.setMedia((e.getNotaMatematica()+e.getNotaPortugues())/2));
-		estudanteList.forEach(System.out::println);
+		estudanteList.forEach(e -> System.out.println(e.getMedia()));
 	}
-
 }

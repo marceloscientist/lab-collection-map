@@ -12,13 +12,14 @@ public class Estudante {
 		this.nome = nome;
 		this.notaMatematica = notaMatematica;
 		this.notaPortugues = notaPortugues;
+		this.setMedia();
 	}
 	
 	public double getMedia() {
 		return media;
 	}
-	public void setMedia(double media) {
-		this.media = media;
+	public void setMedia() {
+		this.media = (this.getNotaMatematica() + this.getNotaPortugues())/2;
 	}	
 	public String getNome() {
 		return nome;
